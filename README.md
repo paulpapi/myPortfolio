@@ -13,15 +13,11 @@ This portfolio is designed to highlight:
 
 Explore my site to get a feel for the kinds of projects I've worked on and how I approach design, usability, and functionality.
 
-## ✨ Live Demo
-
-Check out the live version: [https://paulpapi.github.io/myPortfolio](https://paulpapi.github.io/myPortfolio)
-
 ## 🛠️ Built With
 
 - HTML5 & CSS3  
 - JavaScript ES6+  
 - [Font Awesome](https://fontawesome.com/) (for icons)  
-- Deployed with: GitHub Pages
+- Deployed with: GitHub Pages/netlify
 
 ## 📂 Folder Structure
