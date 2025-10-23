@@ -18,7 +18,7 @@ export default function Hero() {
           </div>
         </div>
         <div className="flex justify-center">
-          <img src="/photo_2_2025-06-14_17-16-26.jpg" alt="Pawlos Addisu" className="w-60 h-60 md:w-72 md:h-72 rounded-full border-4 border-white object-cover shadow-lg" />
+          <img src="./photo_2025-10-23_16-37-07.jpg" alt="Pawlos Addisu" className="w-60 h-60 md:w-72 md:h-72 rounded-full border-4 border-white object-cover shadow-lg" />
         </div>
       </div>
     </section>
