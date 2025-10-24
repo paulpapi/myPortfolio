@@ -1,14 +1,12 @@
 import { useState } from "react";
 import { FaMoon, FaSun } from "react-icons/fa";
-import { NavLink, Link, useLocation } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
 const Header = () => {
   const [darkMode, setDarkMode] = useState(true);
-  const location = useLocation();
-  const currentHash = location.hash;
 
-  const navClassLink = (hash) =>
-    currentHash === hash
+  const navClassLink = ({isActive}) =>
+    isActive
       ? "text-white bg-black hover:bg-gray-900 hover:text-white rounded-md px-3 py-2"
       : "text-white hover:bg-gray-900 hover:text-white rounded-md px-3 py-2";
 
@@ -24,35 +22,25 @@ const Header = () => {
             </NavLink>
           </div>
 
-          <ul className="nav-menu hidden md:flex items-center gap-8 list-none">
-            <li>
-              <Link to="/#home" className={navClassLink("#home")}>
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link to="/#about" className={navClassLink("#about")}>
-                About
-              </Link>
-            </li>
-            <li>
-              <Link to="/#projects" className={navClassLink("#projects")}>
-                Projects
-              </Link>
-            </li>
-            <li>
-              <Link to="/#skills" className={navClassLink("#skills")}>
-                Skills
-              </Link>
-            </li>
-            <li>
-              <Link to="/#contact" className={navClassLink("#contact")}>
-                Contact
-              </Link>
-            </li>
-          </ul>
+          <div className="nav-controls flex items-center gap-6">
+            <ul className="nav-menu hidden md:flex items-center gap-6 list-none">
+              <li>
+                <NavLink to="/" className={navClassLink}>
+                  Home
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to="/projects" className={navClassLink}>
+                  Projects
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to="/contact" className={navClassLink}>
+                  Contact
+                </NavLink>
+              </li>
+            </ul>
 
-          <div className="nav-controls flex items-center gap-3">
             <button
               onClick={() => setDarkMode((prevState) => !prevState)}
               id="theme-toggle"

@@ -69,7 +69,7 @@ const Projects = ({isHome=false}) => {
     <section id="projects" className="projects py-8 bg-gray-100 dark:bg-gray-800 transition-colors">
       <div className="container max-w-6xl mx-auto px-6 md:px-8">
         <h2 className="section-title text-3xl md:text-4xl text-center font-extrabold text-slate-700 dark:text-white mb-12 relative inline-block">
-          Projects
+          {isHome ? "Projects" : ""}
           <span className="block w-12 h-1 bg-primary mx-auto mt-4"></span>
         </h2>
 
