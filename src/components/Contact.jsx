@@ -9,7 +9,7 @@ const Contact = () => {
           Have a project in mind or just want to say hi? Let's connect!
         </p>
         <a
-          href="mailto:yourname@example.com"
+          href="mailto:paulpapi94@gmail.com"
           className="inline-block bg-gray-900 text-white px-8 py-3 rounded-full font-semibold uppercase tracking-wide hover:bg-gray-700 transform hover:-translate-y-1 transition"
         >
           Send a Message
