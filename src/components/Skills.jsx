@@ -1,4 +1,4 @@
-import { FaCuttlefish,FaJava,FaCode,FaNodeJs,FaServer,FaReact,FaDatabase,FaExternalLinkAlt,FaJsSquare,FaPython,FaCube } from "react-icons/fa";
+import { FaCuttlefish,FaJava,FaCode,FaNodeJs,FaServer,FaReact,FaDatabase,FaExternalLinkAlt,FaJsSquare,FaPython,FaCube, FaLinux } from "react-icons/fa";
 const Skills = () => {
   const divClass =
     "bg-gray-100 rounded-xl p-6 text-center hover:-translate-y-2 transition border border-transparent hover:border-gray-900 shadow-sm";
@@ -30,6 +30,14 @@ const Skills = () => {
             <h3 className="text-lg font-bold uppercase tracking-wide">Node.js</h3>
           </div>
           <div className={divClass}>
+            <FaLinux className={iconClass} />
+            <h3 className="text-lg font-bold uppercase tracking-wide">LINUX</h3>
+          </div>
+          <div className={divClass}>
+            <FaCube className={iconClass} />
+            <h3 className="text-lg font-bold uppercase tracking-wide">OpenGL</h3>
+          </div>
+          <div className={divClass}>
             <FaServer className={iconClass} />
             <h3 className="text-lg font-bold uppercase tracking-wide">Express.js</h3>
           </div>
@@ -52,14 +60,6 @@ const Skills = () => {
           <div className={divClass}>
             <FaPython className={iconClass} />
             <h3 className="text-lg font-bold uppercase tracking-wide">Python</h3>
-          </div>
-          <div className={divClass}>
-            <FaDatabase className={iconClass} />
-            <h3 className="text-lg font-bold uppercase tracking-wide">SQL</h3>
-          </div>
-          <div className={divClass}>
-            <FaCube className={iconClass} />
-            <h3 className="text-lg font-bold uppercase tracking-wide">OpenGL</h3>
           </div>
         </div>
       </div>
