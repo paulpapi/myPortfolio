@@ -1,15 +1,16 @@
-// src/components/Contact.jsx
 const Contact = () => {
   return (
-    <section id="contact" className="py-20 bg-white dark:bg-gray-800">
+    <section id="contact" className="py-20 bg-white text-gray-900">
       <div className="max-w-4xl mx-auto px-6 text-center">
-        <h2 className="text-3xl font-bold mb-6 text-gray-800 dark:text-white">Contact</h2>
-        <p className="text-gray-600 dark:text-gray-300 mb-8">
+        <h2 className="text-4xl md:text-5xl font-extrabold uppercase tracking-wide mb-6">
+          Contact
+        </h2>
+        <p className="text-base md:text-lg text-gray-700 font-medium mb-8 leading-relaxed">
           Have a project in mind or just want to say hi? Let's connect!
         </p>
         <a
           href="mailto:yourname@example.com"
-          className="inline-block bg-indigo-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-indigo-700 transition"
+          className="inline-block bg-gray-900 text-white px-8 py-3 rounded-full font-semibold uppercase tracking-wide hover:bg-gray-700 transform hover:-translate-y-1 transition"
         >
           Send a Message
         </a>

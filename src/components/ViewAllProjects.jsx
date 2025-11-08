@@ -2,10 +2,10 @@ import { Link } from 'react-router-dom';
 
 const ViewAllProjects = () => {
   return (
-    <section className="flex justify-center my-5 px-6">
+    <section className="flex justify-center py-16 px-6 bg-white text-gray-900">
       <Link
         to="/projects"
-        className="inline-block text-xl font-bold bg-gradient-to-r from-primary to-indigo-600 text-white py-5 px-12 rounded-full shadow-lg hover:shadow-xl hover:from-primary/80 hover:to-indigo-500 transition-all duration-300 dark:shadow-xl"
+        className="inline-block text-lg md:text-xl font-bold uppercase tracking-wide bg-gray-900 text-white py-4 px-10 rounded-full shadow-md hover:bg-gray-700 transform hover:-translate-y-1 transition"
       >
         View All Projects
       </Link>

@@ -12,28 +12,27 @@ const ContactPage = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // You can integrate with EmailJS, Formspree, or backend here
     console.log("Form submitted:", formData);
   };
 
   return (
-    <section className="min-h-screen py-24 px-6 bg-white dark:bg-gray-900 transition-colors">
+    <section className="min-h-screen py-24 px-6 bg-white text-gray-900">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-4xl font-extrabold text-center text-slate-700 dark:text-white mb-6">
+        <h2 className="text-4xl md:text-5xl font-extrabold text-center uppercase tracking-wide mb-6">
           Contact Me
         </h2>
-        <p className="text-center text-slate-600 dark:text-slate-300 mb-12">
+        <p className="text-center text-gray-700 font-medium mb-12 leading-relaxed">
           Have a project in mind or just want to say hi? I'd love to hear from you!
         </p>
 
         <form
           onSubmit={handleSubmit}
-          className="bg-gray-100 dark:bg-gray-800 rounded-xl p-8 shadow-md space-y-6"
+          className="bg-gray-100 rounded-xl p-8 shadow-md space-y-6"
         >
           <div>
             <label
               htmlFor="name"
-              className="block text-sm font-medium text-slate-700 dark:text-white mb-2"
+              className="block text-sm font-semibold text-gray-800 mb-2 uppercase tracking-wide"
             >
               Name
             </label>
@@ -44,14 +43,14 @@ const ContactPage = () => {
               required
               value={formData.name}
               onChange={handleChange}
-              className="w-full px-4 py-3 rounded-lg bg-white dark:bg-gray-700 text-slate-800 dark:text-white border border-gray-300 dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-primary"
+              className="w-full px-4 py-3 rounded-lg bg-white text-gray-900 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-900"
             />
           </div>
 
           <div>
             <label
               htmlFor="email"
-              className="block text-sm font-medium text-slate-700 dark:text-white mb-2"
+              className="block text-sm font-semibold text-gray-800 mb-2 uppercase tracking-wide"
             >
               Email
             </label>
@@ -62,14 +61,14 @@ const ContactPage = () => {
               required
               value={formData.email}
               onChange={handleChange}
-              className="w-full px-4 py-3 rounded-lg bg-white dark:bg-gray-700 text-slate-800 dark:text-white border border-gray-300 dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-primary"
+              className="w-full px-4 py-3 rounded-lg bg-white text-gray-900 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-900"
             />
           </div>
 
           <div>
             <label
               htmlFor="message"
-              className="block text-sm font-medium text-slate-700 dark:text-white mb-2"
+              className="block text-sm font-semibold text-gray-800 mb-2 uppercase tracking-wide"
             >
               Message
             </label>
@@ -80,13 +79,13 @@ const ContactPage = () => {
               required
               value={formData.message}
               onChange={handleChange}
-              className="w-full px-4 py-3 rounded-lg bg-white dark:bg-gray-700 text-slate-800 dark:text-white border border-gray-300 dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-primary resize-none"
+              className="w-full px-4 py-3 rounded-lg bg-white text-gray-900 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-900 resize-none"
             ></textarea>
           </div>
 
           <button
             type="submit"
-            className="w-full py-4 bg-primary text-white font-semibold rounded-lg hover:bg-primary/80 transition-colors"
+            className="w-full py-4 bg-gray-900 text-white font-semibold uppercase tracking-wide rounded-lg hover:bg-gray-700 transform hover:-translate-y-1 transition"
           >
             Send Message
           </button>
