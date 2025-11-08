@@ -63,19 +63,23 @@ const projects = [
   },
 ];
 
-const Projects = ({isHome=false}) => {
-  const projectList=isHome ? projects.slice(0,4) : projects;
+const Projects = ({ isHome = false }) => {
+  const projectList = isHome ? projects.slice(0, 4) : projects;
 
   return (
-    <section id="projects" className="projects py-8 bg-gray-100 dark:bg-gray-800 transition-colors">
-      <div className="container max-w-6xl mx-auto px-6 md:px-8">
-        <h2 className="section-title text-3xl md:text-4xl text-center font-extrabold text-slate-700 dark:text-white mb-12 relative inline-block">
-          {isHome ? "Projects" : ""}
-          <span className="block w-12 h-1 bg-primary mx-auto mt-4"></span>
+    <section
+      id="projects"
+      className="py-20 bg-white dark:bg-gray-900 text-gray-900 dark:text-white transition-colors"
+    >
+      <div className="max-w-6xl mx-auto px-6 md:px-8">
+        <h2 className="text-4xl md:text-5xl text-center font-extrabold uppercase tracking-wide mb-12">
+          {isHome ? "Projects" : "My Projects"}
+          <span className="block w-12 h-1 bg-gray-900 dark:bg-white mx-auto mt-4"></span>
         </h2>
-        <div className="projects-grid grid gap-6 grid-cols-1 md:grid-cols-2">
-          {projectList.map((project)=>(
-            <Project key={project.title} project={project}/>
+
+        <div className="grid gap-6 grid-cols-1 md:grid-cols-2">
+          {projectList.map((project) => (
+            <Project key={project.title} project={project} />
           ))}
         </div>
       </div>
