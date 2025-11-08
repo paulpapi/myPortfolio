@@ -1,10 +1,6 @@
-import { useState } from "react";
-import { FaMoon, FaSun } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 
 const Header = () => {
-  const [darkMode, setDarkMode] = useState(false);
-
   const navClassLink = ({ isActive }) =>
     isActive
       ? "text-white bg-gray-900 hover:bg-gray-700 hover:text-white rounded-md px-4 py-2 font-bold uppercase tracking-wide transition"
@@ -44,15 +40,6 @@ const Header = () => {
               </NavLink>
             </li>
           </ul>
-
-          {/* Theme Toggle */}
-          <button
-            onClick={() => setDarkMode((prev) => !prev)}
-            aria-label="Toggle dark mode"
-            className="w-10 h-10 rounded-full border-2 border-gray-900 text-gray-900 flex items-center justify-center hover:bg-gray-900 hover:text-white transition"
-          >
-            {darkMode ? <FaSun /> : <FaMoon />}
-          </button>
 
           {/* Hamburger */}
           <button className="md:hidden flex flex-col gap-1.5 p-1.5">
